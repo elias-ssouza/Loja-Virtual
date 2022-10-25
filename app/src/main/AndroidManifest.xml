@@ -14,6 +14,11 @@
         android:theme="@style/Theme.LojaVirtual"
         tools:targetApi="31">
         <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false"
+            android:label="@string/title_activity_product_detail"
+            android:theme="@style/Theme.LojaVirtual.NoActionBar" />
+        <activity
             android:name=".ProductCategoryActivity"
             android:exported="false" />
         <activity

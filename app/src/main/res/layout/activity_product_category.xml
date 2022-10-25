@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/fragment_product_category"
-        android:name="com.example.darkgreen.ProductCategoryFragment"
+        android:name="com.example.loja-virtual.ProductCategoryFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_product_category"/>
