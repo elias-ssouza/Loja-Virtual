@@ -10,16 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <include layout="@layout/menu_toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"/>
     </com.google.android.material.appbar.AppBarLayout>
-
-    <fragment
-        android:id="@+id/fragment_product_category"
-        android:name="com.example.loja-virtual.ProductCategoryFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/fragment_product_category"/>
 
 </LinearLayout>

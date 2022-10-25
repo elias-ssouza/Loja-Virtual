@@ -20,7 +20,5 @@ class ProductDetailActivity : AppCompatActivity() {
         binding = ActivityProductDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-
         }
     }
