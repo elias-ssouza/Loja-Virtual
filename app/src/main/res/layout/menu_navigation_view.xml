@@ -7,6 +7,7 @@
     android:layout_gravity="start"
     android:background="@color/white"
     app:headerLayout="@layout/menu_header_layout"
-    app:menu="@menu/menu_drawer">
+    app:menu="@menu/menu_drawer"
+    android:fitsSystemWindows="false">
 
 </com.google.android.material.navigation.NavigationView>
