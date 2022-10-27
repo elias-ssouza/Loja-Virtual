@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.Navigation
 import com.example.lojavirtual.databinding.ActivityMainBinding
@@ -44,7 +46,25 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    override fun onBackPressed(){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START))
+            drawerLayout.closeDrawer(GravityCompat.START)
+        else
+            super.onBackPressed()
+    }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        TODO("Not yet implemented")
+
+        when (item.itemId) {
+            R.id.nav_home -> Toast.makeText(this, "Página Inicial", Toast.LENGTH_LONG).show()
+            R.id.nav_category -> Toast.makeText(this, "Categoria", Toast.LENGTH_LONG).show()
+            R.id.nav_orders -> Toast.makeText(this, "Meus Pedidos", Toast.LENGTH_LONG).show()
+            R.id.nav_cart -> Toast.makeText(this, "Meu Carrinho", Toast.LENGTH_LONG).show()
+            R.id.nav_logout -> Toast.makeText(this, "Sair", Toast.LENGTH_LONG).show()
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START)
+
+        return true
     }
 }
