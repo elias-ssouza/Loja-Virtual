@@ -27,4 +27,6 @@
     <string name="category">Categoria</string>
     <string name="my_orders">Meus Pedidos</string>
     <string name="my_cart">Meu Carrinho</string>
+    <string name="toogle_open">Open</string>
+    <string name="toogle_close">Close</string>
 </resources>
