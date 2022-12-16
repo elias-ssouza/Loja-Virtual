@@ -26,8 +26,8 @@ class ProductCategoryAdapter(val list: List<ProductCategory>, val context: Conte
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val icon: ImageView = itemView.findViewById(R.id.iv_category_icon)
-        val title: TextView = itemView.findViewById(R.id.tv_category_title)
+        val icon: ImageView = itemView.findViewById(R.id.iv_product_image)
+        val title: TextView = itemView.findViewById(R.id.tv_product_title)
     }
 
 }

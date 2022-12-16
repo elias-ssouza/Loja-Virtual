@@ -16,18 +16,17 @@
         android:background="@android:color/white">
 
         <ImageView
-            android:id="@+id/iv_category_icon"
+            android:id="@+id/iv_product_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_input_get"/>
+            android:src="@drawable/a1"/>
 
         <TextView
-            android:id="@+id/tv_category_title"
+            android:id="@+id/tv_product_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Camisetas"
-            android:layout_marginTop="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+            android:text="Camisa"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
 
     </LinearLayout>
 
